@@ -5,7 +5,10 @@ import numpy as np
 import os
 
 from const import CLASSES, COLORS
-from settings import DEFAULT_CONFIDENCE_THRESHOLD, DEMO_IMAGE, MODEL, PROTOTXT
+DEFAULT_CONFIDENCE_THRESHOLD = 0.5
+DEMO_IMAGE = "images/demo.jpg"
+MODEL = "E:\object-detection-app-master\model\MobileNetSSD_deploy.caffemodel"
+PROTOTXT = "E:\object-detection-app-master\model\MobileNetSSD_deploy.prototxt.txt"
 
 
 @st.cache
