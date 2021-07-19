@@ -7,10 +7,8 @@ import os
 from const import CLASSES, COLORS
 DEFAULT_CONFIDENCE_THRESHOLD = 0.5
 DEMO_IMAGE = "images/demo.jpg"
-MODEL = "E:\object-detection-app-master\model\MobileNetSSD_deploy.caffemodel"
-PROTOTXT = "E:\object-detection-app-master\model\MobileNetSSD_deploy.prototxt.txt"
-
-
+MODEL = "model/MobileNetSSD_deploy.caffemodel"
+PROTOTXT = "model/MobileNetSSD_deploy.prototxt.txt"
 @st.cache
 def process_image(image):
     blob = cv2.dnn.blobFromImage(
